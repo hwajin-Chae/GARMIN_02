@@ -3,7 +3,7 @@ new Swiper('main .promotion > .swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-    delay: 7000
+    delay: 5000
   },
   slidesPerView: 1,
   // spaceBetween: 0,

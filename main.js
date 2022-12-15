@@ -1,3 +1,4 @@
+// main-motion pic slide
 new Swiper('main .promotion > .swiper', {
   direction: 'horizontal',
   loop: true,
@@ -9,3 +10,13 @@ new Swiper('main .promotion > .swiper', {
   // centeredSlides: true,
 });
 
+
+// product-pic slide
+new Swiper('main .new_product > .swiper', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 1000
+  },
+  slidesPerView: 5,
+});

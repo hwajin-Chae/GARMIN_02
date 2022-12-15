@@ -236,13 +236,17 @@ main .products > div p {
 } */
 
 
-main .products {
-    background-color: darksalmon;
+main .swiper {
+    /* background-color: darksalmon; */
     display: flex;
     flex-wrap: wrap;
 }
 
-main .products > div {
+main .swiper > .swiper-wrapper {
+    display: flex;
+}
+
+main > .new_product > .swiper > .swiper-wrapper > div {
     width: 450px;
     height: 500px;
     border: 1px solid rgb(243, 243, 243);
@@ -253,13 +257,13 @@ main .products > div {
     box-shadow: 4px 4px 10px 0 rgba(95, 95, 95, 0.1);
 }
 
-main .products > div .product {
+main .swiper > .swiper-wrapper .product__content {
     width: 300px;
     margin-left: 45px;
     margin-bottom: 20px;
 }
 
-main .products > div h6 {
+main .swiper > .swiper-wrapper h6 {
     color: #000;
     font-size: 16px;
     text-align: center;
@@ -267,7 +271,7 @@ main .products > div h6 {
     line-height: 30px;
 }
 
-main .products > div p {
+main .swiper > .swiper-wrapper p {
     color: #000;
     font-size: 16px;
     text-align: center;

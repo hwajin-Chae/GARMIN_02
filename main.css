@@ -265,6 +265,15 @@ main .events > div {
     box-shadow: 4px 4px 10px 0 rgba(95, 95, 95, 0.1);
 }
 
+main .events > div .event__content > img.event {
+    width: 590px;
+    transition: transform .5s;
+}
+
+main .events > div:hover .event__content > img.event {
+    transform: scale(1.03);
+}
+
 main .events > div:hover .event__text > h3 {
     color:#007cc3;
 }
@@ -413,14 +422,23 @@ main > .newsletter > .newsletter__content > div > input.mail-text {
     width: 480px;
     height: 40px;
     border: 1px solid #000;
-    margin-bottom: 24px;
 }
 
-main > .newsletter > .mail-box > div.mail-box-submit {
+main > .newsletter .mail-box {
+    position: relative;
+    background-color: cyan;
+}
+
+main > .newsletter .mail-box > div.mail-box-submit {
     width: 40px;
     height: 40px;
     border: 1px solid #000;
     background-color: red;
+}
+
+input::placeholder {
+    color: #aaa;
+    font-size: 18px;
 }
 
 main > .newsletter > .newsletter__content > div.mail-text > p {
